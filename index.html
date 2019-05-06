@@ -1,77 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
+
 <head>
-<meta property='og:image' content='//decisions.png'/>
+  <meta charset="UTF-8">
+  <title>smart container search</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
+  
+      <link rel="stylesheet" href="css/style.css">
 
-
-.container {
-  position: relative;
-  width: 50%;
-  display: block;
-	margin-left: auto;
-	margin-right: auto;
-
-}
-
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .2s ease;
-  background-color: #000000;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-family:helvetica;
-  font-size:36px;"
-}
-
-.center {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-
-}
-</style>
+  
 </head>
-<body style="background-color:#000000">
 
-<div class="container">
-  <img src="brain-digital-white.png" alt="Montreal AI Consultancy" class="center" class="image">
-  <div class="overlay">
-    <div class="text">cortex@maic.co</div>
+<body>
+
+  <div id="containter">
+  <h1>MAIC.SOFTWARE</h1>
+<form method="get" action="https://hub.docker.com/search" target="_blank">
+  <div class="mat-div">
+    <label for="q" class="mat-label">Find a container that can ... ?</label>
+    <input class="mat-input" type="text" name="q" placeholder="" onEnter="send()" autocomplete="off" maxlength="1000" onUpdate="recupValeur()" id="valeur">
+    <label for="search" class="fa fa-search"></label><input type="submit" id="search" />
+  </div>
+  
+  </form>
+</div>
+
+
+<input id="slide-sidebar" type="checkbox" role="button" />
+<div class="sidebar">
+  
+  <label for="slide-sidebar"><div class="icon"><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span><span id="icon"></span></label>
+</div>
+  <a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon" target="bank"><img src="http://img15.hostingpics.net/pics/141588291.png" alt="" /></a>
+  <a href="https://docs.google.com/document?usp=chrome_app&authuser=0" target="bank"><img src="http://img15.hostingpics.net/pics/947430592.png" alt="" /></a>
+  <a href="https://mail.google.com/mail/ca" target="bank"><img src="http://img15.hostingpics.net/pics/803535401.png" alt="" /></a>
+  <a href="https://drive.google.com/?usp=chrome_app" target="bank"><img src="http://img15.hostingpics.net/pics/913102282.png" alt="" /></a>
+  <a href="https://www.youtube.com/" target="bank"><img src="http://img15.hostingpics.net/pics/668188771.png" alt="" /></a>
+  <a href="https://docs.google.com/spreadsheets?usp=chrome_app&authuser=0" target="bank"><img src="http://img15.hostingpics.net/pics/373802112.png" alt="" /></a>
+  <a href="https://docs.google.com/presentation?usp=chrome_app&authuser=0" target="bank"><img src="http://img15.hostingpics.net/pics/890130171.png" alt="" /></a>
+</div>
+
+<div class="bottom-bar">
+  
+<!-- <div class="color">
+  <a onclick="color1()" class="color1"></a>
+  <a onclick="color2()" class="color2"></a>
+  <a onclick="color3()" class="color3"></a>
+  <a onclick="color4()" class="color4"></a>
+  </div> -->
+<div class="conditions">
+  
+  <a href="https://www.docker.com/resources/what-container" target="bank">What is a container?</a>
+  <a href="https://www.docker.com/legal" target="bank">Legal</a>
+    <a href="http://va.ug.hn" target="bank">About</a>
   </div>
 </div>
 
-</body>
-</html>
+<!-- functions colors -->
 
+<!-- <script>
+function color1() {
+    document.body.style.backgroundColor = "#000000";
+}
+function color2() {
+    document.body.style.backgroundColor = "#34a853";
+}
+function color3() {
+    document.body.style.backgroundColor = "#F57F17";
+}
+  function color4() {
+    document.body.style.backgroundColor = "#ea4335";
+}
+</script> -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
