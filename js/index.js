@@ -15,5 +15,5 @@ $(".mat-input").focusout(function(){
 
 /************/
 $('#valeur').change(function(){
-      if (this.value=='Devlose') alert('Tu me cherche ?');
+      if (this.value=='easter egg') alert('email unicorn@maic.co');
 });
