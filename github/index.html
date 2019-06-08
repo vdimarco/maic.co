@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
+  <link rel="stylesheet" media="all" href="https://github.algolia.com/assets/application-7566c7aa777daf27847d8a6f972dd272.css">
   
   <link rel="stylesheet" href="css/style.css">
 
@@ -30,13 +30,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 <div id="container">
   <h1>MAIC.SOFTWARE</h1>
-  <form method="get" action="https://hub.docker.com/search" target="_blank">
+  <!-- <form method="get" action="https://hub.docker.com/search" target="_blank">
     <div class="mat-div">
       <label for="q" class="mat-label">Find a container that can help me ... ?</label>
       <input class="mat-input" type="text" name="q" placeholder="" onEnter="send()" autocomplete="off" maxlength="1000" onUpdate="recupValeur()" id="valeur" data-sumome-listbuilder-id="f812c406-bafc-4efb-985c-661869f417c3">
       <label for="search" class="fa fa-search"></label><input type="submit" id="search" />
     </div>
-  </form>
+  </form> -->
+  <div class="awesome-autocomplete" style="left: calc(90px + 8%); top: calc(70px);">
+<span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr;"><input name="q" placeholder="Search something" type="text" class="tt-input" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: montserrat, Helvetica, Arial, sans-serif; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; word-spacing: 0px; letter-spacing: 0px; text-indent: 0px; text-rendering: auto; text-transform: none;">asd</pre><span class="tt-dropdown-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none; right: auto;"><div class="tt-dataset-default"></div><div class="tt-dataset-repos"></div><div class="tt-dataset-users"></div><div class="tt-dataset-branding"></div></span></span>
+<a class="icon icon-delete" href="#"></a>
+</div>
+
 </div>
 
 
@@ -84,10 +89,11 @@ function color3() {
 }
 </script> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
   
+  <script src="https://github.algolia.com/assets/application-929f4911d944334839c5ce805ff60918.js"></script>
+  <script src="https://github.algolia.com/assets/navigation-9f5a971741cb815dad88b3ec9e1b48e0.js"></script>
 
-    <script  src="js/index.js"></script>
+  <script  src="js/index.js"></script>
 
 
 
