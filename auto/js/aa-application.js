@@ -13914,35 +13914,37 @@ var communityHeader = function(t) {
             name: "repos",
             displayKey: "query",
             templates: {
-                header: '<div class="aa-category">Top Repositories</div>',
+                // header: '<div class="aa-category">Top Repositories</div>',
                 suggestion: function(t) {
                     return a.render(t)
                 }
             }
-        }, {
-            source: function(t, n) {
-                s.search(t, function(i, r) {
-                    var o = [];
-                    if (i)
-                        for (var s = 0; s < r.hits.length; ++s) {
-                            var a = r.hits[s];
-                            a.query = t, o.push(e(a))
-                        }
-                    n(o)
-                }, {
-                    hitsPerPage: r,
-                    attributesToRetrieve: ["login", "name", "id", "company", "followers"]
-                })
-            },
-            name: "users",
-            displayKey: "query",
-            templates: {
-                header: '<div class="aa-category">Last Active Users</div>',
-                suggestion: function(t) {
-                    return u.render(t)
-                }
-            }
-        }]).on("typeahead:selected", function(t, e, n) {
+        }
+        // , {
+        //     source: function(t, n) {
+        //         s.search(t, function(i, r) {
+        //             var o = [];
+        //             if (i)
+        //                 for (var s = 0; s < r.hits.length; ++s) {
+        //                     var a = r.hits[s];
+        //                     a.query = t, o.push(e(a))
+        //                 }
+        //             n(o)
+        //         }, {
+        //             hitsPerPage: r,
+        //             attributesToRetrieve: ["login", "name", "id", "company", "followers"]
+        //         })
+        //     },
+        //     name: "users",
+        //     displayKey: "query",
+        //     templates: {
+        //         header: '<div class="aa-category">Last Active Users</div>',
+        //         suggestion: function(t) {
+        //             return u.render(t)
+        //         }
+        //     }
+        // }
+        ]).on("typeahead:selected", function(t, e, n) {
             window.ga && window.ga("send", "event", "search", "select", n), "users" === n ? location.href = "https://github.com/" + e.login : "repos" === n && (location.href = "https://github.com/" + e.full_name)
         }).on("typeahead:cursorchanged", function(t, e, n) {
             var i = $(".aa-query");
