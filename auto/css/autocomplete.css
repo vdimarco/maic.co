@@ -5306,12 +5306,11 @@ section.powered-by-algolia {
 }
 
 .awesome-autocomplete {
-    width: 318px;
+    width: 500px;
     height: 34px;
     background: #332e52;
     position: relative;
-    top: 47px;
-    left: 122px;
+    top: 100px;
     border-radius: 4px
 }
 
@@ -5340,9 +5339,8 @@ section.powered-by-algolia {
 }
 
 .awesome-autocomplete .tt-dropdown-menu {
-    width: 320px;
+    width: 500px;
     padding: 0;
-    border: 1px solid #d8d8d8;
     border-top: none;
     background-color: #fff;
     box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
